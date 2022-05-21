@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+#root {
+  overflow-x: hidden !important;
+}
+* {
+  font-family: 'Bebas Neue', cursive;
+}
+.body {padding-right: 0px !important;}
+
+.roboto, .roboto > span {
+  font-family: 'Roboto', sans-serif;
+}
+.capitalize {
+  text-transform: capitalize;
+}
+header {
+  background-color: rgb(34, 32, 32) !important;
+}
+body {
+  background-color: rgb(34, 32, 32) !important;
+}
+.btn {
+  background-color: rgb(34, 32, 32) !important;
+  color: white;
+  border: 0px;
+  font-size: 18px;
+  padding: 2px 5px;
+  border-radius: 4px;
+}
+.btn:hover {
+  cursor: pointer;
+}
+.item1 {
+  grid-area: logo;
+  text-align: left !important;
+  font-size: 16px !important;
+  border-radius: 0px 10px 0px 0px;
+  display: grid;
+  justify-content: center;
+}
+.item2 {
+  width: 90%;
+  text-align: left !important;
+  grid-area: content;
+  border-radius: 10px 0px 0px 10px;
+}
+.item3 {
+  width: 110%;
+  grid-area: content2;
+  text-align: left !important;
+  font-size: 14px !important;
+}
+.item4 {
+  grid-area: right;
+  text-align: left !important;
+  font-size: 14px !important;
+  border-radius: 0px 0px 10px 0px;
+}
+.item5 {
+  grid-area: social;
+  border-radius: 0px 0px 0px 0px;
+}
+.item6 {
+  grid-area: footer;
+  border-radius: 0px 0px 10px 0px;
+}
+
+
+
+.container {  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  /* gap: 0px 0px; */
+  grid-auto-flow: row;
+  grid-template-areas:
+    "logo content content2"
+    "logo content content2"
+    "logo content content2";
+    background-color: #668cf3;
+    color: black;
+    grid-gap: 1px;
+    /* background-color: rgb(34, 32, 32); */
+    border-radius: 10px;
+    padding: 20px
+
+}
+.modal {
+  background-color: #668cf3 !important;
+}
+.logo { grid-area: logo; }
+
+.content { grid-area: content; }
+
+.content2 { grid-area: content2; }
+
+.content > p, .content2 > p  {
+  font-size: 18px;
+  margin: 2px
+}
+
+.bg-blue {
+  background-color: #668cf3 !important;
+}
+
+.main > div {
+  padding: 45px;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.modalTable {
+  text-align: center;
+  margin: auto;
+}
+td > div > span {
+  white-space: break-spaces !important;
+  font-size: 18px;
+}
+
+.modalTable > tr >td {
+  padding: 20px;
+  border: 1px solid;
+}
+/* .grid-container {
+  min-height: 10px;
+  color: black;
+  display: grid;
+  grid-template-areas:
+    "menu header header header header header "
+    "menu main main right right right";
+  grid-gap: 1px;
+  background-color: rgb(34, 32, 32);
+  border-radius: 10px;
+  padding: 0px;
+}
+
+.grid-container > div {
+  background-color: #668cf3;
+  text-align: center;
+  padding: 8px 8px;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+}
+.grid-container > .item5,
+.grid-container > .item6 {
+  justify-content: center;
+} */
+.sortDiv {
+  margin: 10px 0px;
+}
+
+@media screen and (max-width:768px) {
+  .sortDiv {
+    padding: 15px !important;
+  }
+  .main {
+    padding: 1rem !important;
+  }
+  .main > div {
+    padding: 5px;
+  }
+.main > div > div {
+  margin: auto !important;
+  width: 100%;
+}
+.btn {
+  width: 300%;
+    z-index: 99;
+}
+.modal-box {
+  width: 350px !important;
+  left: 50% !important;
+  top: 50% !important;
+  height: 400px !important;
+}
+}
+body:not(.modal-open){
+  padding-right: 0px !important;
+}
+/* .sortBox > div > div > label {
+  color: rgb(168 168 168 / 60%) !important;
+  top: -8px !important;
+}
+.sortBox > div > div > div > div {
+  padding: 8px 10px !important;
+  color: white;
+    width: 150px;
+}
+.sortBox > div > div {
+  margin-left: 5px;
+  border-radius: 5px;
+  background-color: #ffffff29 !important;
+} */
